@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* This program finds the sum of all even fibonacci terms up to 4 muillion
+/* This program finds the sum of all even fibonacci terms up to 4 million
 * The answer is 4613732
 * Written by: Joshua Newell
 * 8/2/13
