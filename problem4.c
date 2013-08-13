@@ -8,20 +8,25 @@
 
 #include <stdio.h>
 
+/* function prototypes */
 int palCheck(int);
+/*---------------------*/
 
 int main(){
 
+    //initialize variables
     int pal, a, b, palmax=0;
+    
     //Get largest product
     for ( a = 999; a >= 100; a--) //first 3 digit number
     {
         for (b = 999; b >= 100; b--) //second 3 digit number
         {
             pal = a*b;
-            if(palCheck(pal)){
-             //   printf("Palindrome is %d\n", pal); debug
-                if(pal > palmax){
+            if(palCheck(pal)){//if pal is a palindrome
+            
+             //   printf("Palindrome is %d\n", pal); //debug
+                if(pal > palmax){//if pal is greater than the max, set the max as pal
                 palmax = pal;
                 }
             }
@@ -29,7 +34,7 @@ int main(){
         }
     }
     printf("-----------Problem 4--------------\n");
-    printf("The largest palindrome was %d\n", palmax);
+    printf("The largest palindrome was %d\n", palmax);//show output
     printf("----------------------------------\n");
     return 0;
 }
