@@ -6,19 +6,22 @@
 
 #include <stdio.h>
 
+/* Function prototype */
 int divisibleCheck(int i);
+/*--------------------*/
 
-int number = 200000000;
+int number = 200000000; //initialize number equal to 2 million
+
 int main(){
-    while ( divisibleCheck(number) == 0){
+    while ( divisibleCheck(number) == 0){ //while number is divisible
     
-    number++;
+    number++; //increment number
     }
     printf("----------------------Problem 5------------------------------------\n");
-    printf("The smallest possible number that is evenly divisible is %d\n", number);
+    printf("The smallest possible number that is evenly divisible is %d\n", number);//output result
     printf("-------------------------------------------------------------------\n");
     
-    return 0;
+    return 0; //exit main
 }
 
 int divisibleCheck(int number){
@@ -31,9 +34,9 @@ int numdiv=0;
     }
     }
     
-    if(numdiv == 20){
+    if(numdiv == 20){ //if the number is divisible by 1-20
     divisible = 1;
     }
     
-return divisible;
+return divisible; 
 }
